@@ -52,7 +52,7 @@ You can add headers using the GET -H or on browser by installing a header inject
 
 ### Workflow
 The Current tool is meant at the first place to be used as a website.
-1. The file test.php contains all the necessairy peices of the tool to work.
+1. The file [test](test.php) contains all the necessairy peices of the tool to work.
 2. It start by looking up the Internet Service Provider of the user via a GeoIP service.
 3. Then it look within the headers of the http request for a known tracking header value.
 4. The final result is determined by the aboves lookups
@@ -60,11 +60,11 @@ The Current tool is meant at the first place to be used as a website.
 6. depending of those results the user is directed to a result page.
 
 The results can be either :
-|Result |on Database Code |Target page |Log File |
-|-------|-----------------|------------|---------|
-|being tracked |1 |tracked.php |tracked.log |
-|not being tracked |0 |not-tracked.php |not_tracked.log |
-|no lte 4G or 3G were used |-1 |no-lte.php |others.log |
+| Result | on Database Code | Target page | Log File |
+| ------- | ----------------- | ------------ | --------- |
+| being tracked | 1 | [tracked.php](tracked.php) | tracked.log |
+| not being tracked | 0 | [not-tracked.php](not-tracked.php) | not_tracked.log |
+| no lte 4G or 3G were used | -1 | [no-lte.php](no-lte.php) | others.log |
 
 in case a new is appear the test return 2 if the user is bieng tracked otherwise it return -2.
 
@@ -72,10 +72,10 @@ in case a new is appear the test return 2 if the user is bieng tracked otherwise
 #### lookup services :
 The tool uses MaxMind GeoIP insight service, this serice can be replaced by your favorit lookup provider or a database.
 
-To do so you can change the value of the geoprovider type on the config file, depending on it add any needed value that are being fetched.
+To do so you can change the value of the geoprovider type on the [config file](services/config.yml), depending on it add any needed value that are being fetched.
 
 #### Result pages :
-The result page are mainly HTML and content can be added, removed at will.
+The result pages are mainly HTML and content can be added, removed at will.
 
 #### Assets :
-The tool comes with some assets, feel free to use/edit/share them.
+The tool comes with some [assets](img), feel free to use/edit/share them.
