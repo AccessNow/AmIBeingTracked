@@ -1,0 +1,12 @@
+piwik.php
+/nbproject
+/log
+/services/config.yml
+/services/inc
+/services/*META*
+/services/Makefile
+/vendor
+/composer
+/composer.lock
+
+*~

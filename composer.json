@@ -1,0 +1,6 @@
+{
+    "require": {
+        "geoip2/geoip2": "~2.0",
+        "symfony/yaml": "~2.3"
+    }
+}
