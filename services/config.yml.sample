@@ -1,0 +1,19 @@
+# must end by new line char (dont ask why it is a standard).
+database:
+  host: "localhost"
+  database: "amibiengtracked"
+  user: "root"
+  password: "root"
+  port: "3306"
+  
+geoprovider:
+  host: "geoip.maxmind.com"
+  user_id : 24
+  license_key : "abcd"
+  
+logfiles: 
+  - "../path"
+  - "./path/to/file.log"
+  - "/yet/path/to/log/file"
+
+envirement : "prod"
