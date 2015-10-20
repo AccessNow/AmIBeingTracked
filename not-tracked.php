@@ -20,7 +20,7 @@ if ($yaml["envirement"] === "prod") {
             <h1>You are not being tracked by your carrier.</h1>
             <p> Feel Free to Add or delete any content</p>
             <div class="footer">
-                <span>Powred By </span><a href="https://www.accessnow.org/"><img src="./img/access.png" alt="Access" width="150"></a>
+                <span>Powered By </span><a href="https://www.accessnow.org/"><img src="./img/access.png" alt="Access" width="150"></a>
             </div>
         </div>
     </body>

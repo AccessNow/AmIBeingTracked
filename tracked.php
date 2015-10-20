@@ -27,7 +27,7 @@ if ($yaml["envirement"] === "prod") {
             <h1><?php echo str_replace("%perma%", $permacookie, "You're Being Tracked by %perma%."); ?></h1>
             <p> Feel Free to Add or delete any content</p>
             <div class="footer">
-                <span>Powred By </span><a href="https://www.accessnow.org/"><img src="./img/access.png" alt="Access" width="150"></a>
+                <span>Powered By </span><a href="https://www.accessnow.org/"><img src="./img/access.png" alt="Access" width="150"></a>
             </div>
         </div>
     </body>

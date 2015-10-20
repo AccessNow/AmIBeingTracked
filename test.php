@@ -23,18 +23,19 @@ if ($yaml["envirement"] !== "prod") {
     }
 }
 
+// Geo lookup service - initiation and fetching data
+if ($yaml["geoprovider"]["type"] === "insight") {
+    $client = new Client($yaml["geoprovider"]["user_id"], $yaml["geoprovider"]["license_key"]);
 
-$client = new Client($yaml["geoprovider"]["user_id"], $yaml["geoprovider"]["license_key"]);
-
-$record = $client->insights($ip);
-$isp = $record->traits->autonomousSystemOrganization;
-$carrier = $record->traits->organization;
-$country = $record->country->isoCode;
-$latitude = $record->location->latitude;
-$longitude = $record->location->longitude;
-$user_type = $record->traits->userType;
-$confidance = $record->country->confidence;
-
+    $record = $client->insights($ip);
+    $isp = $record->traits->autonomousSystemOrganization;
+    $carrier = $record->traits->organization;
+    $country = $record->country->isoCode;
+    $latitude = $record->location->latitude;
+    $longitude = $record->location->longitude;
+    $user_type = $record->traits->userType;
+    $confidance = $record->country->confidence;
+}
 $page_url;
 $is_tracked = "-1";
 $_SESSION['isp'] = $isp;
@@ -58,6 +59,7 @@ if ($user_type !== "cellular" && $user_type !== "traveler") {
     $csv = array_map('str_getcsv', file('carriers.csv'));
     // Get Header Regardless of the webserver used
     if (!function_exists('getallheaders')) {
+
         function getallheaders() {
             $headers = '';
             foreach ($_SERVER as $name => $value) {
@@ -67,6 +69,7 @@ if ($user_type !== "cellular" && $user_type !== "traveler") {
             }
             return $headers;
         }
+
     }
     // Look for the carrier within the carrier file
     foreach ($csv as $line) {

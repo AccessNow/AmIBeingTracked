@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="footer">
-            <span>This website is hosted by </span><a href="https://www.accessnow.org/"><img src="./img/access.png" alt="Access" width="150"></a>
+            <span>Powered By </span><a href="https://www.accessnow.org/"><img src="./img/access.png" alt="Access" width="150"></a>
         </div>
     </body>
 </html>

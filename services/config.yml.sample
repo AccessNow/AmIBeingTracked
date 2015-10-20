@@ -7,6 +7,7 @@ database:
   port: "3306"
   
 geoprovider:
+  type : "insight"
   host: "geoip.maxmind.com"
   user_id : 24
   license_key : "abcd"
