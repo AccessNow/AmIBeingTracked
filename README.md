@@ -60,6 +60,7 @@ The Current tool is meant at the first place to be used as a website.
 6. depending of those results the user is directed to a result page.
 
 The results can be either :
+
 | Result                    | on Database Code  | Target page                        | Log File        |
 | ------------------------- | ----------------- | ---------------------------------- | --------------- |
 | being tracked             | 1                 | [tracked.php](tracked.php)         | tracked.log     |
