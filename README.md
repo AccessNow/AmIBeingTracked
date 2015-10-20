@@ -60,11 +60,11 @@ The Current tool is meant at the first place to be used as a website.
 6. depending of those results the user is directed to a result page.
 
 The results can be either :
-| Result | on Database Code | Target page | Log File |
-| ------- | ----------------- | ------------ | --------- |
-| being tracked | 1 | [tracked.php](tracked.php) | tracked.log |
-| not being tracked | 0 | [not-tracked.php](not-tracked.php) | not_tracked.log |
-| no lte 4G or 3G were used | -1 | [no-lte.php](no-lte.php) | others.log |
+| Result                    | on Database Code  | Target page                        | Log File        |
+| ------------------------- | ----------------- | ---------------------------------- | --------------- |
+| being tracked             | 1                 | [tracked.php](tracked.php)         | tracked.log     |
+| not being tracked         | 0                 | [not-tracked.php](not-tracked.php) | not_tracked.log |
+| no lte 4G or 3G were used | -1                | [no-lte.php](no-lte.php)           | others.log      |
 
 in case a new is appear the test return 2 if the user is bieng tracked otherwise it return -2.
 
