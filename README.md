@@ -13,15 +13,15 @@ on your webserver's home run :
 
 **code**
 ```sh
-git clone https://git.accessnow.org/bechir/aibt.git
+git clone https://github.com/AccessNow/AmIBeingTracked.git
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
-cd verizon
+cd AmIBeingTracked
 composer install
 ```
 **database**
 ```sql
-cd verizon/services
+cd AmIBeingTracked/services
 mysql -p
 mysql> CREATE DATABASE IF NOT EXISTS `amibeingtracked` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 mysql> CREATE USER 'amibeingtracked'@'localhost' IDENTIFIED BY '$password';
@@ -31,7 +31,7 @@ mysql -p < amibeingtracked.sql
 ```
 **configure**
 ```sh
-cd verizon/services
+cd AmIBeingTracked/services
 cp config.yml.sample config.yml
 editor config.yml
   #provide all needed informations  such the name of database that you just created and the db user...
