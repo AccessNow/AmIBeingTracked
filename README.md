@@ -49,7 +49,7 @@ Test environment comes with handy options that you can set from the url:
 You can add headers using the GET -H or on browser by installing a header injector add-on.
 
 ### Workflow
-The Current tool is meant to be used as a website.
+Currently the tool is meant to be used as a website with the following workflow:
 
 1. The file [test](test.php) contains all the necessary pieces of the tool to work.
 2. It starts by looking up the Internet Service Provider of the user via a GeoIP service.
