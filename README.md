@@ -32,7 +32,7 @@ mysql -p < amibeingtracked.sql
 cd AmIBeingTracked/services
 cp config.yml.sample config.yml
 editor config.yml
-  #provide all needed informations  such the name of database that you just created and the db user...
+  #provide all needed information such the name of database that you just created and the db user...
 ```
 
 ### Development & test environment
