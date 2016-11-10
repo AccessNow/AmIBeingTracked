@@ -4,9 +4,9 @@ Am I Being Tracked is a web tool that looks for tracking values in HTTP headers 
 
 The tool will tell the user their current carrier and whether the user is being tracked by this particular method. 
 
-**Version** : 1.0
+**Version**: 1.0
 
-### Deployment :
+### Deployment
 on your webserver run:
 
 **Code**
@@ -57,7 +57,7 @@ The Current tool is meant to be used as a website.
 5. The result are then saved into log files and a database
 6. Depending of those results, the user is directed to an appropriate result page
 
-The results can be either :
+Potential results include:
 
 | Result                    | on Database Code  | Target page                        | Log File        |
 | ------------------------- | ----------------- | ---------------------------------- | --------------- |
@@ -68,11 +68,11 @@ The results can be either :
 If a new potential tracking header appears it will return a 2, otherwise it returns -2.
 
 ### Customization 
-#### Lookup services :
+#### Lookup services
 The tool uses MaxMind GeoIP insight service, this serice can be replaced by your favorite lookup provider or a database. To do so, you can change the value of the geoprovider type on the [config file](services/config.yml).
 
-#### Result pages :
+#### Result pages
 The result pages are mainly HTML, and content can be added, removed at will.
 
-#### Assets :
+#### Assets
 The tool comes with some [assets](img), feel free to use/edit/share them.
