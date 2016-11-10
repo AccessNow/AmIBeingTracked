@@ -50,6 +50,7 @@ You can add headers using the GET -H or on browser by installing a header inject
 
 ### Workflow
 The Current tool is meant to be used as a website.
+
 1. The file [test](test.php) contains all the necessary pieces of the tool to work.
 2. It starts by looking up the Internet Service Provider of the user via a GeoIP service.
 3. Then it looks within the headers of the HTTP request for a known tracking header value.
