@@ -59,13 +59,13 @@ The Current tool is meant to be used as a website.
 
 Potential results include:
 
-| Result                    | on Database Code  | Target page                        | Log File        |
-| ------------------------- | ----------------- | ---------------------------------- | --------------- |
-| being tracked             | 1                 | [tracked.php](tracked.php)         | tracked.log     |
-| not being tracked         | 0                 | [not-tracked.php](not-tracked.php) | not_tracked.log |
-| no lte 4G or 3G were used | -1                | [no-lte.php](no-lte.php)           | others.log      |
-
-If a new potential tracking header appears it will return a 2, otherwise it returns -2.
+| Result                          | on Database Code  | Target page                        | Log File        |
+| -----------------------------   | ----------------- | ---------------------------------- | --------------- |
+| being tracked (new carrier)     | 2                 | [tracked.php](tracked.php)         | tracked.log     |
+| being tracked                   | 1                 | [tracked.php](tracked.php)         | tracked.log     |
+| not being tracked               | 0                 | [not-tracked.php](not-tracked.php) | not_tracked.log |
+| not being tracked (new carrier) | -1                | [not-tracked.php](not-tracked.php) | not_tracked.log |
+| no 4G or 3G were used           | -2                |  [no-lte.php](no-lte.php)          |  others.log     |
 
 ### Customization 
 #### Lookup services
